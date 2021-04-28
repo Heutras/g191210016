@@ -1,0 +1,57 @@
+body {
+    font-family:'Lato',sans-serif;
+    background-color: #fafafa;
+}
+.navbar {
+    width: 100%;
+    background-color: #e0e0e0;
+    overflow: auto;
+  }
+  
+  .navbar a {
+    float: left;
+    padding: 20px;
+    color: #842aad;
+    text-decoration: none;
+    font-size: 17px;
+    width: 16.66%;
+    text-align: center;
+  }
+  
+  .navbar a:hover {
+    background-color: #2A4E6C;
+  }
+  .navbar a.active {
+    background-color:#3498db;
+  }
+  
+  
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  #solCol{
+      margin-left: -30px;     
+}
+#ortaCol{
+    padding-right:40px;
+}
+      
+#banaUlasin{
+
+    font-family: "Times New Roman";
+    color: white;
+    text-align: center;
+}
+.arkaPlan{
+    background-color: black;
+}
+
+.resim{
+  margin: 10px;  
+}
