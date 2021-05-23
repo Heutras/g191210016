@@ -28,6 +28,8 @@ a{
 }
 .navbar {
     color : #059862;
+    height: 70px;
+    padding-left: -30px;
 }
 .konteynır {
     width: 100vw;
@@ -100,22 +102,15 @@ nav ul {
 nav ul li {
     text-transform: uppercase;
     color:#fff;
-    margin: 60px 0;
+    margin: 10px -20px;
     transform:translateX(-100%);
     transition: transform 0.4s ease-out;
 }
 nav ul li i {
-    font-size:20px;
+    font-size:30px;
     margin-right:10px;
 }
-nav ul li + li {
-    margin-left:30px;
-    transform:translateX(-150%);
-}
-nav ul li + li + li {
-    margin-left: 60px;
-    transform: translateX(-200%);
-}
+
 .contents img {
     max-width: 100%;
 }
@@ -125,16 +120,28 @@ nav ul li + li + li {
     margin: 50px auto;
 }
 #bg-1{
-    background-color:#F29999
+    background-color:#00E636
 }
 #bg-2{
-    background-color:#F2B680
+    background-color:#00CD30
 }
 #bg-3{
-    background-color:#6BB983
+    background-color:#00B32A
 }
 #bg-4{
-    background-color:#79A7A8    
+    background-color:#009A24    
+}
+#bg-5{
+    background-color:#00801E    
+}
+#bg-6{
+    background-color:#006618    
+}
+#bg-7{
+    background-color:#004D12    
+}
+#bg-8{
+    background-color:#00330C    
 }
 
 @media only screen and (max-width: 800px) {
@@ -143,7 +150,7 @@ nav ul li + li + li {
       height: 185px;
     }
     .konteynır {
-      padding: 30px 0px 30px 0px;
+      padding: 50px 0px 30px 0px;
     }
     .konteynır.show-nav + nav li {
       transform: translateX(30px);
@@ -156,4 +163,5 @@ nav ul li + li + li {
       height:48px;
       width:48px;
     }
+    
   }
