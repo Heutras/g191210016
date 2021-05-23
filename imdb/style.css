@@ -20,6 +20,11 @@ p {
     height: 96px;
     width: 96px;
 }
+#header {
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
 a{
     text-decoration: none;
 }
@@ -28,6 +33,7 @@ a{
 }
 .navbar {
     color : #059862;
+    height: 60px;
 }
 .konteynır {
     width: 100vw;
@@ -41,6 +47,44 @@ a{
 }
 .konteynır.show-nav {
     transform: rotate(-20deg);
+}
+#movie-1 {
+    margin-top:100px;
+}
+.block { 
+    font-size: 23px;
+    margin-bottom: 100px;
+  }
+.block > h3 {
+    font-family:'Open Sans',sans-serif;
+    font-size: 50px;
+    color: #2c2c2c;
+    background-color: #d5d5d5;
+    letter-spacing: .3em;
+    text-shadow: 
+      2px 2px 0px #d5d5d5, 
+      5px 5px 0px rgba(0, 234, 0, 0.64); 
+}
+.görsel {
+    width:400px;
+    height: 500px;
+    border-radius: 5%;
+}
+#interstellar{
+    margin-right: 50px;
+    float: left;
+}
+#nba {
+    margin-left: 50px;
+    float: right;
+}
+#Archery {
+    margin-right: 50px;
+    float: left;
+}
+#tiyatro_sahnesi {
+    margin-left: 50px;
+    float: right;
 }
 .btn-konteynır {
     position: fixed;
@@ -100,15 +144,22 @@ nav ul {
 nav ul li {
     text-transform: uppercase;
     color:#fff;
-    margin: 10px -20px;
+    margin: 60px -20px;
     transform:translateX(-100%);
     transition: transform 0.4s ease-out;
 }
 nav ul li i {
-    font-size:30px;
+    font-size:20px;
     margin-right:10px;
 }
-
+nav ul li + li {
+    margin-left:30px;
+    transform:translateX(-150%);
+}
+nav ul li + li + li {
+    margin-left: 60px;
+    transform: translateX(-200%);
+}
 .contents img {
     max-width: 100%;
 }
@@ -117,8 +168,22 @@ nav ul li i {
     max-width: 1000px;
     margin: 50px auto;
 }
+.contents h1 {
+    margin:0;
+    font-size:70px;
+    color: #2c2c2c;
+    background-color: #d5d5d5;
+    letter-spacing: .05em;
+    text-shadow: 
+      3px 3px 0px #d5d5d5, 
+      6px 6px 0px rgba(0, 234, 0, 0.64);
+}
 
 @media only screen and (max-width: 800px) {
+    p {
+      margin: 30px;
+      line-height: 30px;
+    }
     .btn {
       width: 185px;
       height: 185px;
@@ -129,6 +194,12 @@ nav ul li i {
     .konteynır.show-nav + nav li {
       transform: translateX(30px);
     }
+    #header {
+      display:flex;
+      justify-content:center;
+      flex-direction:column;
+      padding: 10px;
+    }
     #login {
       right:20px;
       top:20px;
@@ -137,5 +208,58 @@ nav ul li i {
       height:48px;
       width:48px;
     }
+    h4 {
     
+      color: #2c2c2c;
+      letter-spacing: .3em;
+    }
+    #movie-1 {
+      margin-top:100px;
+    }
+    .block {
+      font-size: 18px;
+      margin-bottom: 70px;
+    }
+    .block > h3 {
+      margin: 30px;
+      font-family:'Open Sans',sans-serif;
+      font-size: 30px;
+      color: #2c2c2c;
+      background-color: #d5d5d5;
+      letter-spacing: .3em;
+      text-shadow: 
+        1px 1px 0px #d5d5d5, 
+        3px 3px 0px rgba(0, 234, 0, 0.64);
+    }
+    .görsel {
+      border-radius: 0%;
+      margin-bottom: 30px;
+      width: 400px;
+      float:none;
+    }
+    #Archery {
+      width: 400px;
+    }
+    .movie-2 > h3{
+      margin:30px;
+      margin-left:70px ;
+    }
+    .movie-3 > h3{
+      margin:30px;
+      margin-left:100px ;
+    }
+    .movie-4 > h3{
+      margin:30px;
+      margin-left:100px ;
+    }
+    .contents h1 {
+      margin:0;
+      font-size:70px;
+      color: #2c2c2c;
+      background-color: #d5d5d5;
+      letter-spacing: .05em;
+      text-shadow: 
+        1px 1px 0px #d5d5d5, 
+        4px 4px 0px rgba(0, 234, 0, 0.64);    
+    }
   }
