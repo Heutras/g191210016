@@ -20,6 +20,15 @@ p {
     height: 96px;
     width: 96px;
 }
+small {
+    color:red;
+}
+.success {
+    border-color: #059862;
+}
+.error {
+    border-color: red;
+}
 a{
     text-decoration: none;
 }
@@ -95,7 +104,6 @@ nav {
 }
 nav ul {
     list-style-type:none;
-    padding-left:30px;
 }
 nav ul li {
     text-transform: uppercase;
@@ -109,9 +117,6 @@ nav ul li i {
     margin-right:10px;
 }
 
-.contents img {
-    max-width: 100%;
-}
 .contents {
     background-color:#d5d5d5;
     max-width: 1000px;
